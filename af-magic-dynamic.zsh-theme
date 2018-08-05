@@ -1,6 +1,11 @@
 # af-magic-dynamic.zsh-theme
-# Repo: https://github.com/rslavin/af-magic-dynamic
-# Forked From: https://github.com/andyfleming/oh-my-zsh/blob/master/themes/af-magic.zsh-theme
+# This is a copy of the af-magic theme, but with a dynamically-resizing prompt based
+# on a minimum amount of whitespace which can be set by the user. The prompt changes
+# by collapsing the prompt either by using the shrink-path plugin or by truncating
+# it to only show the last segments (this can also be set by the user). See comments for
+# details
+#
+# Original Theme: https://github.com/andyfleming/oh-my-zsh/blob/master/themes/af-magic.zsh-theme
 
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
